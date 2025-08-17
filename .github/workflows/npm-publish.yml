@@ -1,0 +1,48 @@
+# This workflow publishes the npm package to the npm registry.
+
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      # This specifies that the workflow runs only when a new Git tag is pushed.
+      # The tag must match the format 'vX.Y.Z' (e.g., v1.0.0).
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    name: Build, Lint, Test, and Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out your repository code.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Sets up Node.js on the runner.
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' # Use the latest LTS version of Node.js.
+
+      # Installs dependencies using npm ci for a clean install.
+      - name: Install dependencies
+        run: npm i
+
+      # Builds the package to create the dist/ folder.
+      - name: Build project
+        run: npm run build
+
+      # Configures npm for publishing, authenticating with the NPM_TOKEN secret.
+      - name: Setup npm for publishing
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org' # Sets the registry URL.
+
+      # Publishes the package to the npm registry.
+      # The --access public flag is required for scoped packages to be public.
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # Uses the secret for authentication.

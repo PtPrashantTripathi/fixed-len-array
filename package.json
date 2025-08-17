@@ -1,0 +1,58 @@
+{
+    "name": "fixed-length-array",
+    "version": "1.0.0",
+    "description": "A tiny and type-safe TypeScript utility to create and work with fixed-length arrays (tuples).",
+    "keywords": [
+        "typescript",
+        "utility",
+        "array",
+        "tuple",
+        "fixed-length",
+        "typesafe"
+    ],
+    "homepage": "https://github.com/ptprashanttripathi/fixed-length-array",
+    "bugs": {
+        "url": "https://github.com/ptprashanttripathi/fixed-length-array/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ptprashanttripathi/fixed-length-array.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Pt. Prashant Tripathi",
+        "url": "https://github.com/ptprashanttripathi",
+        "githubUsername": "ptprashanttripathi"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write \"*.{ts,js,cjs,json}\"",
+        "lint": "eslint . --fix",
+        "prepublishOnly": "npm run build",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.33.0",
+        "@typescript-eslint/parser": "^8.39.1",
+        "eslint": "^9.33.0",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^16.3.0",
+        "prettier": "^3.6.2",
+        "prettier-plugin-jsdoc": "^1.3.3",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.39.1",
+        "vite": "^7.1.2",
+        "vitest": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "typeScriptVersion": "5.0"
+}
