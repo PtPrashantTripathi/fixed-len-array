@@ -14,6 +14,10 @@ offering compile-time safety using TypeScript's type system.
 
 ## 🚀 Usage
 
+```sh
+npm install fixed-len-array
+```
+
 ```ts
 import { toFixedLengthArray, FixedLengthArray } from 'fixed-len-array';
 
