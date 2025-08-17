@@ -1,4 +1,4 @@
-# 📐 fixed-length-array
+# 📐 fixed-len-array
 
 A tiny and type-safe TypeScript utility to create and work with **fixed-length
 arrays (tuples)**. Automatically trims or pads input arrays at runtime, while
@@ -15,7 +15,7 @@ offering compile-time safety using TypeScript's type system.
 ## 🚀 Usage
 
 ```ts
-import { toFixedLengthArray, FixedLengthArray } from 'fixed-length-array';
+import { toFixedLengthArray, FixedLengthArray } from 'fixed-len-array';
 
 // Pads to a fixed length of 3
 const vec3 = toFixedLengthArray([1], 3, 0);

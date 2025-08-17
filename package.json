@@ -1,5 +1,5 @@
 {
-    "name": "fixed-length-array",
+    "name": "fixed-len-array",
     "version": "1.0.0",
     "description": "A tiny and type-safe TypeScript utility to create and work with fixed-length arrays (tuples).",
     "keywords": [
@@ -10,13 +10,13 @@
         "fixed-length",
         "typesafe"
     ],
-    "homepage": "https://github.com/ptprashanttripathi/fixed-length-array",
+    "homepage": "https://github.com/ptprashanttripathi/fixed-len-array",
     "bugs": {
-        "url": "https://github.com/ptprashanttripathi/fixed-length-array/issues"
+        "url": "https://github.com/ptprashanttripathi/fixed-len-array/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ptprashanttripathi/fixed-length-array.git"
+        "url": "git+https://github.com/ptprashanttripathi/fixed-len-array.git"
     },
     "license": "MIT",
     "author": {
