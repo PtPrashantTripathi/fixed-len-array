@@ -1,5 +1,7 @@
 // eslint.config.js
 import prettier from "eslint-config-prettier";
+import unusedImports from "eslint-plugin-unused-imports";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 import js from "@eslint/js";
 import ts from "typescript-eslint";
@@ -16,11 +18,28 @@ export default ts.config([
 
             globals: globals.browser,
         },
+        plugins: {
+            "unused-imports": unusedImports,
+            "simple-import-sort": simpleImportSort,
+        },
 
         rules: {
             // "no-console": "warn",
             "no-unused-vars": "off",
             "@typescript-eslint/no-unused-vars": "off",
+            "unused-imports/no-unused-imports": "warn",
+            "unused-imports/no-unused-vars": [
+                "warn",
+                {
+                    vars: "all",
+                    varsIgnorePattern: "^_",
+                    args: "after-used",
+                    argsIgnorePattern: "^_",
+                },
+            ],
+            "simple-import-sort/exports": "warn",
+            "simple-import-sort/imports": "warn",
+
             "no-var": "warn",
             "object-shorthand": ["warn", "properties"],
 

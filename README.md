@@ -4,6 +4,16 @@ A tiny and type-safe TypeScript utility to create and work with **fixed-length
 arrays (tuples)**. Automatically trims or pads input arrays at runtime, while
 offering compile-time safety using TypeScript's type system.
 
+<div align="center">
+  <p>
+    <a href="https://www.npmjs.com/package/fixed-len-array"><img src="https://img.shields.io/npm/v/fixed-len-array.svg" alt="NPM Version"/></a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/actions"><img src="https://img.shields.io/github/actions/workflow/status/ptprashanttripathi/fixed-len-array/npm-publish.yml?branch=main" alt="Build Status"/></a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/fixed-len-array.svg" alt="MIT License"/></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript Ready"/></a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/docs"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Documentation"/></a>
+  </p>
+</div>
+
 ## ✨ Features
 
 - ✅ Enforces fixed-length array types (tuples)
@@ -19,7 +29,7 @@ npm install fixed-len-array
 ```
 
 ```ts
-import { toFixedLengthArray, FixedLengthArray } from 'fixed-len-array';
+import { toFixedLengthArray, FixedLengthArray } from "fixed-len-array";
 
 // Pads to a fixed length of 3
 const vec3 = toFixedLengthArray([1], 3, 0);
@@ -43,3 +53,36 @@ Creates a fixed-length array by trimming or padding the input.
 
 A recursive type that represents a tuple of length `N`, with all elements of
 type `T`.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md)
+for details.
+
+### Development Setup
+
+```bash
+# Clone repository
+git clone https://github.com/ptprashanttripathi/fixed-len-array.git
+cd fixed-len-array
+
+# Install dependencies
+npm install
+
+# Build TypeScript
+npm run build
+
+# Run tests
+npm test
+```
+
+## 📄 License
+
+This project is [MIT](LICENSE) licensed.
+
+---
+
+<div align="center">
+<p>Made with ❤️ by <a href="https://github.com/ptprashanttripathi">Pt. Prashant Tripathi</a></p>
+<p>⭐ Star this repo if you find it helpful!</p>
+</div>
