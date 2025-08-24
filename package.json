@@ -1,6 +1,6 @@
 {
     "name": "fixed-len-array",
-    "version": "1.4.0",
+    "version": "1.10.0",
     "description": "A tiny and type-safe TypeScript utility to create and work with fixed-length arrays (tuples).",
     "keywords": [
         "typescript",
@@ -10,7 +10,9 @@
         "fixed-length",
         "typesafe"
     ],
-    "files": ["src"],
+    "files": [
+        "dist"
+    ],
     "homepage": "https://github.com/ptprashanttripathi/fixed-len-array",
     "bugs": {
         "url": "https://github.com/ptprashanttripathi/fixed-len-array/issues"
@@ -26,9 +28,19 @@
         "githubUsername": "ptprashanttripathi"
     },
     "type": "module",
-    "main": "src/index.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.cjs.js"
+        }
+    },
+    "main": "./dist/index.cjs.js",
+    "module": "./dist/index.es.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
-        "build": "tsc",
+        "build": "vite build",
+        "dev": "vite build --watch",
         "format": "prettier --write \"**/*.{ts,js,json,md,yml}\"",
         "lint": "eslint . --fix",
         "test": "vitest",
@@ -37,7 +49,9 @@
         "typecheck": "tsc --noEmit"
     },
     "devDependencies": {
-        "@eslint/js": "latest",
+        "@types/node": "latets",
+        "vite": "latest",
+        "vite-plugin-dts": "latest",
         "@typescript-eslint/parser": "latest",
         "@vitest/coverage-v8": "latest",
         "eslint": "latest",
