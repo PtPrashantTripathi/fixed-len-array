@@ -19,6 +19,7 @@ offering compile-time safety using TypeScript's type system.
 - ✅ Enforces fixed-length array types (tuples)
 - 🧠 Type-safe construction
 - 🔧 Automatically trims or pads at runtime
+- 🔄 Pads with a **custom value** or falls back to `null` if not provided
 - 📦 Tiny, no dependencies
 - 🔁 Works in both Node.js and browser environments (ESM only)
 
@@ -31,9 +32,13 @@ npm install fixed-len-array
 ```ts
 import { toFixedLengthArray, FixedLengthArray } from "fixed-len-array";
 
-// Pads to a fixed length of 3
+// Pads to a fixed length of 3 with custom default
 const vec3 = toFixedLengthArray([1], 3, 0);
 // Result: [1, 0, 0]
+
+// If no default is provided, pads with `null`
+const paddedWithNull = toFixedLengthArray([1], 3);
+// Result: [1, null, null]
 
 // Trims if input is longer
 const trimmed = toFixedLengthArray([1, 2, 3, 4, 5], 3, 0);
@@ -45,9 +50,10 @@ type Vec3 = FixedLengthArray<3, number>;
 
 ## 🧪 API
 
-### `toFixedLengthArray<T, N>(input: T[], fixedLength: N, defaultValue: T): FixedLengthArray<N, T>`
+### `toFixedLengthArray<T, N>(input: T[], fixedLength: N, defaultValue?: T): FixedLengthArray<N, T>`
 
-Creates a fixed-length array by trimming or padding the input.
+Creates a fixed-length array by trimming or padding the input. If `defaultValue`
+is omitted, `null` will be used for padding.
 
 ### `type FixedLengthArray<N, T>`
 
