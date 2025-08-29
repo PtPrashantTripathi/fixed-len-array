@@ -1,6 +1,6 @@
 {
     "name": "fixed-len-array",
-    "version": "1.10.0",
+    "version": "1.12.0",
     "description": "A tiny and type-safe TypeScript utility to create and work with fixed-length arrays (tuples).",
     "keywords": [
         "typescript",
@@ -10,9 +10,6 @@
         "fixed-length",
         "typesafe"
     ],
-    "files": [
-        "dist"
-    ],
     "homepage": "https://github.com/ptprashanttripathi/fixed-len-array",
     "bugs": {
         "url": "https://github.com/ptprashanttripathi/fixed-len-array/issues"
@@ -20,6 +17,10 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ptprashanttripathi/fixed-len-array.git"
+    },
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/ptprashanttripathi"
     },
     "license": "MIT",
     "author": {
@@ -35,9 +36,14 @@
             "require": "./dist/index.cjs.js"
         }
     },
-    "main": "./dist/index.cjs.js",
+    "main": "./dist/index.es.js",
+    "jsdelivr": "./dist/index.umd.js",
+    "unpkg": "./dist/index.umd.js",
     "module": "./dist/index.es.js",
     "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "vite build",
         "dev": "vite build --watch",
@@ -49,13 +55,12 @@
         "typecheck": "tsc --noEmit"
     },
     "devDependencies": {
-        "@types/node": "latets",
-        "vite": "latest",
-        "vite-plugin-dts": "latest",
+        "@types/node": "latest",
         "@typescript-eslint/parser": "latest",
         "@vitest/coverage-v8": "latest",
         "eslint": "latest",
         "eslint-config-prettier": "latest",
+        "eslint-plugin-package-json": "latest",
         "eslint-plugin-simple-import-sort": "latest",
         "eslint-plugin-unused-imports": "latest",
         "globals": "latest",
@@ -63,10 +68,13 @@
         "prettier-plugin-jsdoc": "latest",
         "typescript": "latest",
         "typescript-eslint": "latest",
+        "vite": "latest",
+        "vite-plugin-dts": "latest",
         "vitest": "latest"
     },
     "engines": {
         "node": ">=22"
     },
+    "require": "./dist/index.cjs.js",
     "typeScriptVersion": "latest"
 }
