@@ -1,16 +1,28 @@
-# 📐 fixed-len-array
-
-A tiny and type-safe TypeScript utility to create and work with **fixed-length
-arrays (tuples)**. Automatically trims or pads input arrays at runtime, while
-offering compile-time safety using TypeScript's type system.
-
 <div align="center">
+  <img src="https://raw.githubusercontent.com/PtPrashantTripathi/fixed-len-array/main/logo/fixed_len_array.png" alt="📐 fixed-len-array" width="420"/>
+
+  <h1>📐 fixed-len-array</h1>
+
   <p>
-    <a href="https://www.npmjs.com/package/fixed-len-array"><img src="https://img.shields.io/npm/v/fixed-len-array.svg" alt="NPM Version"/></a>
-    <a href="https://github.com/ptprashanttripathi/fixed-len-array/actions"><img src="https://img.shields.io/github/actions/workflow/status/ptprashanttripathi/fixed-len-array/npm-publish.yml?branch=main" alt="Build Status"/></a>
-    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/fixed-len-array.svg" alt="MIT License"/></a>
-    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript Ready"/></a>
-    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/docs"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Documentation"/></a>
+    <strong>A tiny and type-safe TypeScript utility to create and work with fixed-length arrays (tuples). Automatically trims or pads input arrays at runtime, while offering compile-time safety using TypeScript's type system.</strong>
+  </p>
+
+  <p>
+    <a href="https://www.npmjs.com/package/fixed-len-array">
+      <img src="https://img.shields.io/npm/v/fixed-len-array.svg" alt="NPM Version"/>
+    </a>
+    <a href="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml">
+      <img src="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml/badge.svg" alt="Build Status"/>
+    </a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/LICENSE">
+      <img src="https://img.shields.io/npm/l/fixed-len-array.svg" alt="MIT License"/>
+    </a>
+    <a href="https://www.typescriptlang.org/">
+      <img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript Ready"/>
+    </a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/docs">
+      <img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Documentation"/>
+    </a>
   </p>
 </div>
 
