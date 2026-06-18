@@ -8,21 +8,11 @@
   </p>
 
   <p>
-    <a href="https://www.npmjs.com/package/fixed-len-array">
-      <img src="https://img.shields.io/npm/v/fixed-len-array.svg" alt="NPM Version"/>
-    </a>
-    <a href="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml">
-      <img src="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml/badge.svg" alt="Build Status"/>
-    </a>
-    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/LICENSE">
-      <img src="https://img.shields.io/npm/l/fixed-len-array.svg" alt="MIT License"/>
-    </a>
-    <a href="https://www.typescriptlang.org/">
-      <img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript Ready"/>
-    </a>
-    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/docs">
-      <img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Documentation"/>
-    </a>
+    <a href="https://www.npmjs.com/package/fixed-len-array"><img src="https://img.shields.io/npm/v/fixed-len-array.svg" alt="NPM Version"/></a>
+    <a href="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml"><img src="https://github.com/PtPrashantTripathi/fixed-len-array/actions/workflows/npm-publish.yml/badge.svg" alt="Build Status"/></a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/fixed-len-array.svg" alt="MIT License"/></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript Ready"/></a>
+    <a href="https://github.com/ptprashanttripathi/fixed-len-array/blob/main/docs"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Documentation"/></a>
   </p>
 </div>
 
