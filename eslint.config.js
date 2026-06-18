@@ -15,11 +15,7 @@ export default ts.config([
     globalIgnores(["dist", "node_modules"]),
     {
         files: ["**/*.ts", "**/*.tsx"],
-        extends: [
-            prettier,
-            js.configs.recommended,
-            ts.configs.recommended,
-        ],
+        extends: [prettier, js.configs.recommended, ts.configs.recommended],
         languageOptions: {
             ecmaVersion: "latest",
             sourceType: "module",
